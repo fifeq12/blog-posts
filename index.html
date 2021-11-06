@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts.js" defer></script>
+    <script src="https://kit.fontawesome.com/24eede9f38.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@300&display=swap" rel="stylesheet">
+    <title>blog.posts</title>
+</head>
+<body>
+    <div class="backdrop"></div>
+    <div class="modal add-post-modal">
+        <h1 class="modal-title">New post</h1>
+        <div class="modal-content add-post">
+            <label><b>Title:</b></label>
+            <input type="text" maxlength="50">
+            <label><b>Description:</b></label>
+            <textarea rows="2" cols="50" maxlength="300" style="resize: none;"></textarea>
+            <label><b>Author:</b></label>
+            <input type="text" maxlength="50">
+        </div>
+        <div class="modal-actions">
+            <div class="btn btn-add"><h4>Add new post!</h4></div>
+            <div class="btn btn-cancel"><h4>Cancel</h4></div>
+        </div>
+    </div>
+    <div class="modal delete-post-modal">
+        <h2 class="modal-title">Are you sure?</h2>
+        <div class="modal-actions">
+            <div class="btn btn-delete">Delete post</div>
+            <div class="btn btn-cancel"><h4>Cancel</h4></div>
+        </div>
+    </div>
+    <div class="modal edit-post-modal">
+        <h1 class="modal-title">Edit post</h1>
+        <div class="modal-content edit-post">
+            <label><b>Title</b></label>
+            <input type="text" maxlength="80">
+            <label><b>Description</b></label>
+            <textarea rows="2" cols="50" maxlength="300" style="resize: none;"></textarea>
+            <label><b>Author</b></label>
+            <input type="text" maxlength="50">
+        </div>
+        <div class="modal-actions">
+            <div class="btn btn-edit"><h4>Save post</h4></div>
+            <div class="btn btn-cancel"><h4>Cancel</h4></div>
+        </div>
+    </div>
+    <nav>
+        <div class="nav-logo"><i class="fas fa-blog"></i></div>
+        <div class="nav-title"><h1>blog.posts</h1></div>
+        <div class="nav-add-post">
+            <div class="add-post-button"><h3>Add new post</h3><i class="fas fa-plus-circle"></i></div>
+        </div>
+    </nav>
+    <div class="container">
+        <ul class="blog-wall"></ul>
+        <div class="footer"></div>
+    </div>
+</body>
+</html>
